@@ -1,66 +1,63 @@
-# Borrowing and Lending Defi
+Here’s a revised version of your **Borrowing and Lending DeFi** README:
+
+---
+
+# Borrowing and Lending DeFi
 
 ## Introduction
-This Asset Borrowing and Lending Defi Dapp operates on **Ethereum's Sepolia Testnet**. 
+This Asset Borrowing and Lending DeFi DApp operates on **Ethereum's Sepolia Testnet**, providing users with a secure and efficient way to lend and borrow digital assets.
 
 ## Technology Stack
-
-- Built on Ethereum Blockchain
-- Solidity
-- Javascript
-- Typescript
-- Chainlink Price Oracles
-- Openzeppelin (ERC20 Tokens, Ownable, Reentrancy Guards)
-- Hardhat
-- Etherjs
-- Metamask
-- Infura Web3API
-- Next JS
-- Tailwind CSS
-- HTML
+- **Blockchain**: equito
+- **Smart Contracts**: Solidity
+- **Frontend**: JavaScript, TypeScript, Next.js, Tailwind CSS, HTML
+- **Price Oracles**: Chainlink
+- **Security**: OpenZeppelin (ERC20 Tokens, Ownable, Reentrancy Guards)
+- **Development Tools**: Hardhat, Ethers.js
+- **Wallet Integration**: MetaMask
+- **API**: Infura Web3API
 
 ## Project Layout
 
-### Top Level folders
-
-1. /components - contains the front-end application
-2. /context - contains the front-end application wrapper javascript
-3. /contracts - contains the solidity contract
-4. /pages - Next Js Main rendering pages and components
-
+### Top-Level Folders
+1. **/components**: Contains the front-end application components.
+2. **/context**: Holds the front-end application context wrapper.
+3. **/contracts**: Contains the Solidity smart contracts.
+4. **/pages**: Main rendering pages and components for Next.js.
 
 ### Important Files
+1. **package.json**: Lists dependencies and scripts.
+2. **.env**: Stores Infura/Alchemy API keys and your wallet's private key.
 
-1. package.json - node modules to be installed, etc.
-2. .env - To store Infura/Alchemy API keys and your private key
+## Using & Testing the DApp on Sepolia
+1. **MetaMask**: Install the MetaMask wallet extension.
+2. **Add Sepolia Testnet**: Configure the Sepolia Testnet in MetaMask.
 
-## Using & Testing DApp on Sepolia
+## Cloning and Deploying the DApp on Sepolia Testnet
 
-1. Metamask : Install Metamask wallet extension
-
-2. Add Sepolia Testnet to MetaMask
-
-
-## Cloning and Deploying the Dapp on Sepolia Testnet
-
-1. Clone this repo :
-
-2. Go to the root directory and install all node packages
-
-3. Please Create a new Infura API key
-
-4. Now copy Metamask wallet private key
-
-5. Create a new .env file in the root directory
-
-   **_Paste the Infura Sepolia API key and your metmask accounts private key into .env file_**
-    INFURA_SEPOLIA_API_URL=""
-
-    MAIN_ACCOUNT = ""
-   
-
-6. Start NextJs Node Server
+1. Clone this repository:
+   ```bash
+   git clone <repo-url>
+   ```
+2. Navigate to the root directory and install all node packages:
+   ```bash
+   npm install
+   ```
+3. Create a new Infura API key.
+4. Copy your MetaMask wallet's private key.
+5. Create a `.env` file in the root directory and add the following:
+   ```
+   INFURA_SEPOLIA_API_URL=""
+   MAIN_ACCOUNT=""
+   ```
+6. Start the Next.js server:
+   ```bash
+   npm run dev
+   ```
 
 ## License
-
 This project is licensed under the MIT License.
+
+---
+
+Let me know if you need any further modifications!
